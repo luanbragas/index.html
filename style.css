@@ -3,7 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 90%; /* ajuste a largura conforme necessário */
+    height: auto; /* remova a altura fixa */
+    margin: 20px auto; /* ajuste as margens conforme necessário */
+    position: static; /* remova a posição absoluta */
+  }
 body {
   text-align: center;
   padding: 20px;
