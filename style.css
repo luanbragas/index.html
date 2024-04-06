@@ -3,102 +3,93 @@
   padding: 0;
   box-sizing: border-box;
 }
-@media only screen and (max-width: 600px) {
-  .container {
-    width: 90%; /* ajuste a largura conforme necessário */
-    height: auto; /* remova a altura fixa */
-    margin: 20px auto; /* ajuste as margens conforme necessário */
-    position: static; /* remova a posição absoluta */
-  }
 
-  #abrirConvite {
-    width: 90%; /* ajuste a largura conforme necessário */
-    margin-top: 20px; /* ajuste a margem superior conforme necessário */
-    position: static; /* remova a posição absoluta */
-  }
-
-  #nao {
-    position: static; /* remova a posição absoluta */
-  }
-}
 body {
   text-align: center;
-  padding: 20px;
+  padding: 10px; 
   background-color: #bdbec1;
 }
-#imagem{
-  margin-top: -25px;
-  border-radius: 20px;
+
+#imagem {
+  margin-top: -15px; 
+  border-radius: 15px;
+  max-width: 100%; 
 }
+
 #aspas {
-  margin-right: -110px;
-  width: 300px;
-  -webkit-text-stroke: 0.9;
+  padding: 10px; 
+  
+  -webkit-text-stroke: 0.7px; 
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 .container {
   display: flex;
-  justify-content: center;
-  align-items: center; 
-  width: 400px; 
-  height: 500px; 
+  flex-direction: column; 
+  align-items: center;
+  width: 90%; 
+  max-width: 300px;
+  margin: auto;
+  position: relative;
+  border-radius: 15px;
   background-color: rgba(14, 17, 35, 0.2);
-  border-radius: 15px; 
-  margin: auto; 
-  position: absolute; 
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  
 }
 
 .hidden {
   display: none;
 }
 
-
-
-
 #abrirConvite {
   color: rgba(193, 154, 82, 0.764);
-  width: 400px; /* Definindo a largura do elemento abrirConvite */
-  margin-top: -100px; /* Definindo a margem superior */
-  position: absolute;
+  width: 90%; 
+  max-width: 250px; 
+  margin-top: -50px;
   background-color: #383e7a;
-  -webkit-text-stroke: 0.8px;
-  height: 100px;
-  border-radius: 20px;
+  -webkit-text-stroke: 0.6px; 
+  height: 80px;
+  border-radius: 15px; 
   cursor: pointer;
-  display: inline-block; 
-
 }
 
 #abrirConvite:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 10px rgba(27, 27, 27, 0.5); 
+  box-shadow: 0 0 10px rgba(27, 27, 27, 0.5);
   opacity: 0.9;
 }
 
 #sim, #nao {
-  background-color: #0a6c0d; 
-  font-size: 24px; 
+  background-color: #0a6c0d;
+  font-size: 18px; 
   border: none;
-  color: white; 
-  padding: 15px 32px; 
+  color: white;
+  padding: 10px 20px; 
   text-align: center;
-  text-decoration: none; 
-  display: inline-block; 
-  margin: 10px; 
-  cursor: pointer; 
-  border-radius: 20px;
-  transition-duration: 0.4s;}
+  text-decoration: none;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 15px;
+  transition-duration: 0.4s;
+
+  
+  
+}
 
 #sim:hover, #nao:hover {
-  background-color: #45a049; 
+  background-color: #45a049;
+  
+ 
 }
 
 #nao {
-  background-color: #751711; 
+  background-color: #751711;
   position: absolute;
+  left: 140px;
 }
+
+#sim{
+  position: absolute;
+  left:60px ;
+}
+
 
