@@ -10,6 +10,17 @@
     margin: 20px auto; /* ajuste as margens conforme necessário */
     position: static; /* remova a posição absoluta */
   }
+
+  #abrirConvite {
+    width: 90%; /* ajuste a largura conforme necessário */
+    margin-top: 20px; /* ajuste a margem superior conforme necessário */
+    position: static; /* remova a posição absoluta */
+  }
+
+  #nao {
+    position: static; /* remova a posição absoluta */
+  }
+}
 body {
   text-align: center;
   padding: 20px;
