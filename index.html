@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convite da Donzelinha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio id="myAudio" loop autoplay>
+    <source src="wanna.mp3" type="audio/mpeg">
+  </audio>
+  <div id="container" class="container">
+    <img id="imagem" src="gifs-de-carta-0.gif" alt="Convite da Donzelinha">
+    <button id="abrirConvite">Abrir Convite</button>
+    <div id="opcoes" class="opcoes hidden">
+      <div id="aspas"><h1>ACEITA COMER UM BK COMIGO?</h1></div>
+      <div id="botoes">
+        <button id="sim">Sim</button>
+        <button id="nao">Não</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    var audio = document.getElementById("myAudio");
+    audio.volume = 0.2; 
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
